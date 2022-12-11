@@ -140,8 +140,13 @@ hr{
   margin-left: 20%;
   height: 500px;
   width: 300px;
-  background-color: black;
-  filter: opacity(70%);
+  border-radius: 0 0 100px 15px;
+  /* box-shadow: 6px 0 15px rgba(0,0,0,0.6); */
+  background: rgba(0,0,0,0.7);
+-webkit-backdrop-filter: blur(4px);
+backdrop-filter: blur(4px);
+
+
 }
 
 
@@ -186,7 +191,7 @@ hr{
 .cd-header{
   z-index: 100;
   width:100vw;
-  height: 100vh;
+  height: 50%;
   position: fixed;
 
 }
@@ -224,7 +229,11 @@ hr{
 }
 
 .nav_content {
-  background-color: black;
+  /*glassmorphism effect
+   background: rgba(0,0,0,0.45);
+-webkit-backdrop-filter: blur(18px);
+backdrop-filter: blur(18px); */
+background-color: black;
   position: absolute;
   /* padding-top: 7px; */
   padding-left: 30px;
@@ -311,8 +320,33 @@ hr{
   top: 0;
 }
 
+footer{
+  width:100%;
+  position:absolute;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+.footer-div{
+  width:68%;
+  display: flex;
+  justify-items: center;
+  
 
+}
 
+.copywrite{
+  display: inline-flex;
+  color: blanchedalmond;
+  width: 50%;
+}
+
+.social-media {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 50%;
+}
 
 
 
