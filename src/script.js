@@ -18,7 +18,7 @@ lineMiddle.classList.add("line-middle");
 lineDown.classList.add("line-down");
 
 burger.appendChild(burgerMenu);
-const globalMenu = document.querySelector(".nav");
+const globalMenu = document.querySelector(".cd-header");
 
 burgerMenu.addEventListener("click", () => {
 	if (globalMenu.classList.contains("visible")) {
