@@ -11,14 +11,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Babylonica&display=swap" rel="stylesheet">
+<link href="./assets/hamburger.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Hayden</h1><br>
         <h2> Model</h2>
         <div class="header-div">
-            <div class="burger">
-            </div>
+            <button class="hamburger hamburger--emphatic" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        <script>
+        var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+
+    var hamburgers = document.querySelectorAll(".hamburger");
+    if (hamburgers.length > 0) {
+      forEach(hamburgers, function(hamburger) {
+        hamburger.addEventListener("click", function() {
+          this.classList.toggle("is-active");
+        }, false);
+      });
+    }
+        </script>
+            <!-- <div class="burger">
+            </div> -->
         </div>
         <!-- <div class="cd-header">
             <div class="nav">
