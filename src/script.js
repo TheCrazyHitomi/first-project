@@ -1,32 +1,16 @@
-const burger = document.querySelector(".burger");
-
-const burgerMenu = document.createElement("div");
-const lineUp = document.createElement("div");
-const lineMiddle = document.createElement("div");
-const lineDown = document.createElement("div");
-// const globalMenu = document.querySelector(".nav");
-
-// console.log(globalMenu);
-
-burgerMenu.appendChild(lineUp);
-burgerMenu.appendChild(lineMiddle);
-burgerMenu.appendChild(lineDown);
-
-burgerMenu.classList.add("burger-menu");
-lineUp.classList.add("line-up");
-lineMiddle.classList.add("line-middle");
-lineDown.classList.add("line-down");
-
-burger.appendChild(burgerMenu);
 const globalMenu = document.querySelector(".cd-header");
 
-burgerMenu.addEventListener("click", () => {
-	if (globalMenu.classList.contains("visible")) {
-		globalMenu.classList.remove("visible");
-	} else {
-		globalMenu.classList.add("visible");
-	}
-});
+const hamburgers = document.querySelectorAll(".hamburger");
+// Si y'a un ou plusieurs .hamburger
+if (hamburgers.length > 0) {
+	// Itération sur chaque hamburger
+	hamburgers.forEach((hamburger) => {
+		// gestion d'évènement du clic
 
-console.log(globalMenu);
-// burger.appendChild(burgerMenu);
+		hamburger.addEventListener("click", () => {
+			// Set de la class is-active sur hamburger;
+			hamburger.classList.toggle("is-active");
+			globalMenu.classList.toggle("visible");
+		});
+	});
+}
