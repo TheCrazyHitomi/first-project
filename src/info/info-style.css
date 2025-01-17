@@ -136,7 +136,7 @@ hr {
 	overflow: inherit;
 	position: absolute;
 	text-align: end;
-	margin-left: 55%;
+	margin-left: 70%;
 	height: 500px;
 	width: 300px;
 	border-radius: 0 0 15px 100px;
@@ -152,6 +152,16 @@ hr {
 	/* margin-top: 150px; */
 	justify-content: center;
 	align-items: top;
+	width: 100vw;
+	height: 35vw;
+	padding-left: 210px;
+	padding-right: 210px;
+}
+
+.pic-background{
+	width: 100vw;
+	display: flex;
+	object-fit: cover;
 }
 
 .header-div {
@@ -386,14 +396,16 @@ ul {
 }
 
 footer {
-	width: 100%;
+	width: 100vw;
+	padding-left: 210px;
+	padding-right: 210px;
 	position: absolute;
 	margin-top: 5px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 }
 .footer-div {
-	width: 68%;
+	width: 100%;
 	display: flex;
 	justify-items: center;
 }
